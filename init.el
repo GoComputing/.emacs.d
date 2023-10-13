@@ -28,6 +28,27 @@
 
 ;; Load configuration
 (setq my-config-dir (joindirs my-global-config-dir "config"))
+
 (load (joindirs my-config-dir "general" "backup.el"))
 (load (joindirs my-config-dir "general" "packages.el"))
 (load (joindirs my-config-dir "general" "layout.el"))
+
+(load (joindirs my-config-dir "programming" "notebooks.el"))
+
+
+
+;; Auto-generated configuration
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ein:jupyter-server-use-subcommand "server")
+ '(ein:output-area-inlined-images t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

@@ -23,6 +23,7 @@
 ; (require 'nano-compact)
 (require 'nano-splash)
 (require 'nano-help)
+; (require 'nano-command)
 
 
 
