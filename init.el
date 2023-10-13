@@ -30,3 +30,4 @@
 (setq my-config-dir (joindirs my-global-config-dir "config"))
 (load (joindirs my-config-dir "general" "backup.el"))
 (load (joindirs my-config-dir "general" "packages.el"))
+(load (joindirs my-config-dir "general" "layout.el"))
