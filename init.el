@@ -19,6 +19,9 @@
 (setq my-global-config-dir (joindirs "~" ".config" "emacs"))
 
 
+;; Packages directories
+(setq my-general-packages-dir my-global-config-dir)
+
 ;; Load tools
 (setq my-tools-dir (joindirs my-global-config-dir "tools"))
 
@@ -26,3 +29,4 @@
 ;; Load configuration
 (setq my-config-dir (joindirs my-global-config-dir "config"))
 (load (joindirs my-config-dir "general" "backup.el"))
+(load (joindirs my-config-dir "general" "packages.el"))
