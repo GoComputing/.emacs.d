@@ -1,4 +1,3 @@
-
 ;; Initial tools
 
 ; Credit: https://stackoverflow.com/a/13473856
@@ -26,14 +25,10 @@
 (setq my-tools-dir (joindirs my-global-config-dir "tools"))
 
 
-;; Load configuration
+;; Load packages configuration
 (setq my-config-dir (joindirs my-global-config-dir "config"))
-
-(load (joindirs my-config-dir "general" "backup.el"))
 (load (joindirs my-config-dir "general" "packages.el"))
-(load (joindirs my-config-dir "general" "layout.el"))
 
-(load (joindirs my-config-dir "programming" "notebooks.el"))
 
 
 
@@ -52,3 +47,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+
+;; Load Emacs configuration
+
+(load (joindirs my-config-dir "general" "backup.el"))
+(load (joindirs my-config-dir "general" "layout.el"))
+
+(load (joindirs my-config-dir "programming" "general.el"))
+(load (joindirs my-config-dir "programming" "notebooks.el"))
