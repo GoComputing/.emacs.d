@@ -55,6 +55,7 @@
 (load (joindirs my-config-dir "general" "backup.el"))
 (load (joindirs my-config-dir "general" "layout.el"))
 (load (joindirs my-config-dir "general" "keybindings.el"))
+(load (joindirs my-config-dir "general" "editor.el"))
 
 (load (joindirs my-config-dir "programming" "general.el"))
 (load (joindirs my-config-dir "programming" "notebooks.el"))
