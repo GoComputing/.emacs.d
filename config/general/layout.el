@@ -14,9 +14,45 @@
 (require 'nano-theme-light)
 
 (nano-theme-set-dark)
+
+(defun nano-theme ()
+  "Derive many, many faces from the core nano faces."
+  (nano-theme--basics)
+  ; (nano-theme--font-lock)
+  (nano-theme--mode-line)
+  (nano-theme--minibuffer)
+  (nano-theme--buttons)
+  (nano-theme--info)
+  (nano-theme--bookmark)
+  (nano-theme--speedbar)
+  (nano-theme--message)
+  (nano-theme--outline)
+  (nano-theme--customize)
+  (nano-theme--package)
+  (nano-theme--flyspell)
+  (nano-theme--ido)
+  (nano-theme--diff)
+  (nano-theme--term)
+  (nano-theme--calendar)
+  (nano-theme--agenda)
+  (nano-theme--org)
+  (nano-theme--mu4e)
+  (nano-theme--elfeed)
+  (nano-theme--deft)
+  (nano-theme--rst)
+  (nano-theme--markdown)
+  (nano-theme--ivy)
+  (nano-theme--helm)
+  (nano-theme--helm-swoop)
+  (nano-theme--helm-occur)
+  (nano-theme--helm-ff)
+  (nano-theme--helm-grep)
+  (nano-theme--hl-line)
+  (nano-theme--company))
+
 (call-interactively 'nano-refresh-theme)
 
-(require 'nano-defaults)
+; (require 'nano-defaults)
 (require 'nano-session)
 (require 'nano-modeline)
 (require 'nano-bindings)
@@ -51,7 +87,7 @@
   ;; Global settings (defaults)
   (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-one t)
+  (load-theme 'doom-xcode t)
 
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
