@@ -7,3 +7,5 @@
   :straight t)
 
 (vertico-mode)
+
+(setq completion-styles '(substring basic))
