@@ -64,3 +64,4 @@
 
 (load (joindirs my-config-dir "programming" "general.el"))
 (load (joindirs my-config-dir "programming" "notebooks.el"))
+(load (joindirs my-config-dir "programming" "latex.el"))
